@@ -1,0 +1,10 @@
+{
+  "name": "hdfcltd/ach-mandate",
+  "authors": [
+    {
+      "name": "Kalim manihar",
+      "email": "kalim.manihar@hdfcsupport.con.in"
+    }
+  ],
+  "require": {}
+}

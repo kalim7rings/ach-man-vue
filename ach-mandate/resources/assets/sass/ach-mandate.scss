@@ -1,0 +1,1456 @@
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/ach-mandate/titillium-web-v7-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'),
+  url('../fonts/ach-mandate/titillium-web-v7-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-300.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-300.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+/* titillium-web-regular - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ach-mandate/titillium-web-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
+  url('../fonts/ach-mandate/titillium-web-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-regular.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+/* titillium-web-600 - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/ach-mandate/titillium-web-v7-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'),
+  url('../fonts/ach-mandate/titillium-web-v7-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-600.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-600.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+/* titillium-web-700 - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ach-mandate/titillium-web-v7-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'),
+  url('../fonts/ach-mandate/titillium-web-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/ach-mandate/titillium-web-v7-latin-700.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #b7b7b7 !important;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b7b7b7 !important;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #b7b7b7 !important;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b7b7b7 !important;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow:none;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+  outline:0px !important;
+}
+
+textarea:hover,
+textarea:active,
+textarea:focus,
+input:hover,
+input:active,
+input:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+  outline:0px !important;
+  border: none;
+  -webkit-appearance:none;
+}
+
+body {
+  background: #fbfbfb;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0.5px;
+}
+.top-head-fix {
+  background-color: #FFF;
+  border: 0;
+  margin-bottom: 0;
+  padding: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+.top-logo-head-new {
+  line-height: 60px;
+  height: 60px;
+  width: 142px;
+  background-image: url(../images/ach-mandate/hdfc-logo_new.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 85%;
+  padding: 0 20px;
+  margin: 0;
+  display: block;
+}
+.top-logo-head {
+  line-height: 60px;
+  height: 60px;
+  width: 142px;
+  background-image: url(../images/ach-mandate/hdfc-logo.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 85%;
+  padding: 0 20px;
+  margin: 0;
+  display: block;
+}
+.name-first {
+  background-color: #c62828;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  height: 37px;
+  width: 37px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 34px;
+}
+.toggle-new {
+  background-color: transparent !important;
+  color: #000 !important;
+  font-weight: 500;
+  border: none;
+}
+.main_bg {
+  background-image: url(../images/ach-mandate/main_bg.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  padding: 3% 2%;
+}
+.main_card{
+  background-color: white;
+  min-height: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0);
+  /*background-image: url(../images/ach-mandate/main_card_bg.png);*/
+  background-size: cover;
+}
+.main_card_inner{
+  background-color: white;
+  min-height: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0);
+}
+.sub_title{
+  color: #08334e;
+  font-size: 2em;
+  font-weight: 500;
+}
+.main_title{
+  color: #08334e;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+.loan_info_text {
+  color: #08334e;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: justify;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+.ACH_info_text {
+  color: #08334e;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+.main_btn_common{
+  text-align: center;
+  border-radius: 50px;
+  background-color: #f72805;
+  color: white;
+  display: inline-block;
+  padding: 10px 50px;
+  font-weight: 600;
+  font-size: 1.2em;
+  box-shadow: 0px 5px 15px 1px #ed1c2452;
+  border: none;
+  margin-right: 10px;
+}
+.left_panel_Convert{
+  position: relative;
+  top: 20vh;
+  padding: 0px 7%;
+}
+.modal {
+  top: 12vh;
+}
+.otp_title {
+  color: #08334e;
+  font-weight: 800;
+  font-size: 1.6em;
+  text-align: center;
+}
+.otp_sub_title {
+  color: #08334e;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+.otp_title_sml{
+  font-size: 0.70em;
+  font-weight: 500;
+}
+.title_otp_text{
+  font-size: 1em;
+  font-weight: 500;
+}
+.check_adj{
+  padding-left: 80px;
+  padding-right: 90px;
+  text-align: left;
+}
+.radio_main_lbl{
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.OTP_input_div{
+  margin: 0 auto;
+  padding-left: 8px;
+  text-align: center;
+}
+.otp_input{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 15px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+.lbl-radio {
+  color: #9c9d9d;
+  font-size: 16px;
+  font-style: normal;
+  padding-left: 10px;
+}
+.lbl_blue {
+  color: #08334e;
+  font-weight: 600;
+}
+.OTP-form-control {
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.OTP-form-control:hover, .OTP-form-control:focus{
+  border: 1px solid #ced4da;
+}
+.custom-control {
+  margin-top: 12px;
+}
+.OTP_exp{
+  color: #fd0000;
+  font-weight: 500;
+}
+.cancel {
+  font-size: 1.1em;
+  color: #4ba4df;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.otp_resend{
+  cursor: pointer;
+}
+.OTP_div{
+}
+.contact_head {
+  width: 100%;
+  display: flex;
+  background: rgb(238,34,36);
+  background: linear-gradient(180deg, rgba(238,34,36,1) 0%, rgba(232,33,35,1) 100%);
+  min-height: 73px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.contact_head div:nth-child(2) {
+  flex: 3;
+}
+.contact_head div:nth-child(2) {
+  flex: 2;
+}
+.contact_head div {
+  flex: 1;
+}
+.acc_number{
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 15px;
+  color: #0c3650;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+.w700{
+  font-weight: 700;
+}
+.contact_head_lbl {
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+}
+.contact_head_val {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.conv_main_box {
+  padding: 40px;
+  box-sizing: border-box;
+}
+.conv_title {
+  color: #08334e;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+.bold{
+  font-weight: bold;
+}
+.conv_main_box p{
+  color: #08334e;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: justify;
+}
+.Conversion_details_box {
+  margin: 50px 4em;
+  min-height: 220px;
+  border: 1px solid #c4c4c4;
+  border-radius: 15px;
+  padding: 20px;
+  background: rgb(247,247,247);
+  background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(254,254,254,1) 100%);
+}
+.current_plan_val{
+  color: #08334e;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.current_plan_lbl {
+  color: #08334e;
+  font-weight: 500;
+  font-size: 1em;
+}
+.Conversion_details_box .col-lg-3 {
+  padding-left: 3em;
+}
+.middle_line {
+  border-top: 1px solid #c4c4c4;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col_blue{
+  color: #4ba4df;
+}
+.refresh_box{
+  position: absolute;
+  margin-top: -30px;
+  background-color: white;
+  padding: 10px;
+  right: 23vh;
+}
+.save_info_details{
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: center;
+  color: #08334e;
+}
+.font18{
+  font-size: 1.8em;
+}
+.inr_icon{
+  position: relative;
+  top: -2px;
+}
+img.inr_icon_sm {
+  width: 11px;
+  position: relative;
+  top: -1px;
+}
+p.sml_text {
+  color: #08334e;
+  font-weight: 400;
+  font-size: 0.75em;
+  margin-top: 10px;
+  text-align: justify;
+}
+.summery_left_card{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.09), 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+.summery_lbl {
+  color: #08334e;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.summery_val {
+  color: #4ba4df;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.summery_left_card .row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.taxes{
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #000000;
+}
+.Condition_title {
+  color: #08334e;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.term_first_text {
+  color: #08334e;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.term_sec_text {
+  color: #08334e;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 30px;
+}
+.condition_text{
+  color: #5cabe1;
+  font-style: italic;
+  font-size: 0.85em;
+  line-height: 22px;
+}
+
+.payment_success{
+  text-align: center;
+  margin-top: 15px;
+}
+.payment_success h3 {
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #08334e;
+  font-size: 1.8em;
+}
+.payment_success p {
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #08334e;
+  font-size: 1.2em;
+  padding: 0px 14em;
+  text-align: center;
+}
+
+.payment_error h3 {
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #08334e;
+  font-size: 1.8em;
+}
+.payment_error p {
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #08334e;
+  font-size: 1.2em;
+  padding: 0px 14em;
+  text-align: center;
+}
+.payment_tran {
+  width: 60%;
+  background-color: #f8f8f8;
+  margin: auto;
+  border: 1px solid #c4c4c4;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: left;
+}
+.payment_tran .row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.payment_val {
+  color: #08334e;
+  font-weight: 700;
+  font-size: 1.3em;
+  word-break: break-all;
+}
+.payment_lbl {
+  color: #08334e;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+.text_note {
+  color: #4ba4df;
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 20px;
+}
+.note_div{
+  width: 48%;
+  margin: auto;
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+}
+ol{
+  margin-left: -20px;
+}
+.payment_tran .row:last-child {
+  border-bottom: none;
+}
+.img_main{
+  width: 90%;
+  position: relative;
+  top: 4%;
+}
+.ACh_main_title{
+  font-size: 45px;
+  color: #ea262f;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.pl50{
+  padding-left: 50px;
+}
+.margin0{
+  margin: 0px;
+}
+.padding0{
+  padding: 0px;
+}
+.ACh_info_two{
+  position: absolute;
+  bottom: 0px;
+}
+.ACh_info_four{
+  position: absolute;
+  bottom: 0px;
+}
+.btn_fix{
+  position: relative;
+  top: 10px;
+}
+.process_card {
+  border: 1px solid #818486;
+  width: 95%;
+  padding: 20px;
+  margin-left: 17px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.display-table{
+  display: table;
+}
+.ach_info_text{
+  font-size: 18px;
+}
+.note_ach::before {
+  content: "• ";
+  color: red;
+}
+.note_ach{
+  margin-right: 30px;
+}
+.ach_note_title{
+  color: #08334e;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 20px;
+}
+.ach_note_red{
+  background-color: #f80907;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0px 15px;
+  margin-top: 8px;
+}
+.form-group input, .form-group select {
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dcdcdc;
+  margin-top: 0px;
+  margin-bottom: 0;
+  color: #08334e;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 1.3em;
+  font-weight: 800;
+  height: 40px!important;
+}
+.input_lbl{
+  margin: 0px;
+  color: #08334e;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.login_div{
+  width: 90%;
+  margin: auto;
+}
+.w300{
+  font-weight: 300;
+}
+.red-color{
+  color: red;
+}
+.OTP_main_div{
+}
+.border-right{
+  border-right: 1px solid #818486;
+}
+
+.modal-lgs {
+  max-width: 570px;
+}
+.modal-backdrop.show {
+  opacity: 0.7;
+  background-color: black;
+}
+
+.modal-backdrop{
+  opacity: 0.7;
+}
+
+.modal-content{
+  border-radius: 10px;
+  border: 0;
+}
+.ACH_log_title {
+  color: #08334e;
+  font-weight: 800;
+  font-size: 1.8em;
+  text-align: center;
+}
+.close_icon{
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  width: 22px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.acc_log_text{
+  font-size: 1em;
+  color: #4ba4df;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+  font-style: italic;
+}
+.ACH_main_box {
+  padding: 0px;
+  box-sizing: border-box;
+}
+.ACH_sub_box {
+  padding: 40px;
+  box-sizing: border-box;
+}
+.ach_de_title{
+  color: #08334e;
+  font-weight: 800;
+  font-size: 1.6em;
+  margin-left: 50px;
+  margin-top: 4px;
+}
+.ach_sub_cont {
+  color: #08334e;
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: 10px;
+}
+.btn_form {
+  text-align: center;
+  background-color: transparent;
+  color: #08334e;
+  display: inline-block;
+  padding: 0px;
+  font-weight: 600;
+  font-size: 1.1em;
+  box-shadow: none;
+  border: none;
+  margin-right: 10px;
+}
+.btn_form_active{
+  text-align: center;
+  border-radius: 50px;
+  background-color: #4ba4df;
+  color: white;
+  display: inline-block;
+  padding: 8px 30px;
+  font-weight: 600;
+  font-size: 1.1em;
+  /*box-shadow: 0px 5px 15px 1px #4ba4df82;
+  box-shadow: 0px 5px 15px #4ba4df82;*/
+  border: none;
+  margin-right: 10px;
+}
+.bank_card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+}
+.bank_box {
+  background-color: #f5f5f5;
+  border-right: 1px solid #dadada;
+}
+.form_bank_box{
+  box-shadow: 10px 0px 11px 0px #dedede;
+  z-index: 9;
+}
+.min-height{
+  min-height: auto;
+}
+.bankName {
+  color: #08334e;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.bankAccount {
+  color: black;
+  font-weight: 500;
+  font-size: 1em;
+}
+.bankIfsc{
+  color: black;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.bank_icon{
+  margin-right: 13px;
+  margin-top: 5px;
+}
+.light_gray{
+  color: #bdbdbd;
+}
+.custom-control-labels {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+.custom-radio .custom-control-labels::before {
+  border-radius: 50%;
+}
+.custom-control-labels::before {
+  position: absolute;
+  top: .25rem;
+  left: -1.5rem;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+.custom-control-labels::after {
+  position: absolute;
+  top: 0.8rem;
+  left: -1rem;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+.custom-control-input:checked~.custom-control-labels::before {
+  color: #fff;
+  border-color: #eb2123;
+  background-color: #eb2123;
+}
+.note_bank {
+  color: #eb2123;
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 87%;
+  font-size: 0.9em;
+}
+.account_type {
+  color: #5cabe1;
+}
+.input_lbl_val {
+  color: #08334e;
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-top: 6px;
+}
+.edit_icon_ach {
+  position: absolute;
+  right: 16px;
+  background-color: #ea2123;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ach_term{
+  color: #08334e;
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 6px;
+  font-style: italic;
+}
+.custom-control-label::before {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.custom-control-label::after {
+  top: .35rem;
+  left: -1.4rem;
+}
+.ACH_info_icon {
+  width: 25px;
+  cursor: pointer;
+}
+.info_text_div {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.ach_info_title {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.info_text{
+  font-size: 16px;
+  display: inline-block;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+.info_text_div ul li{
+  list-style-type: disc;
+}
+.note_done {
+  color: #5cabe1;
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-right: 15px;
+}
+.ACH-w-50 {
+  width: 50%!important;
+}
+.paddinglr15{
+  padding: 0px 15px;
+}
+.short-line{
+  border-bottom: 2px solid #ec2226;
+  display: block;
+  width: 30%;
+  margin-bottom: 3px;
+}
+.ACH-Paymount-title {
+  font-size: 2em;
+  color: #08334e;
+}
+.ACH-Paymount-sub-line {
+  font-size: 0.5em;
+}
+.alert-success-new {
+  margin: auto;
+  font-size: 1.2em;
+  color: #0cbb6f;
+  background-color: #e6f8f0;
+  border-color: #38c688;
+}
+.ACH_tran{
+  width: 60%;
+  background-color: #f8f8f8;
+  margin: auto;
+  border: 1px solid #c4c4c4;
+  padding: 0px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: left;
+}
+.ACH_tran .row{
+  padding: 15px;
+}
+.ACH-payment_lbl {
+  color: #08334e;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.ach_text_note{
+  color: #747474;
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 20px;
+  font-style: italic;
+}
+.border-bottom{
+  border-bottom: 1px solid gray;
+  margin: 0px;
+}
+.alert-error-new{
+  margin: auto;
+  font-size: 1.2em;
+  color: #f80907;
+  background-color: #fff4f4;
+  border-color: #f93836;
+}
+.error-reason{
+  color: #08334e;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.red{
+  color: #f80907;
+}
+.mt-5, .my-5 {
+  margin-top: 2rem!important;
+}
+.w60{
+  width: 60%;
+}
+.ACh_main_title_sub{
+  color: #08334e;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0px;
+  margin-top: 0px;
+}
+.error_pop_text {
+  color: #08334e;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 1724px) {
+  .ACh_info_two{
+    position: relative;
+    bottom: 0px;
+  }
+  .ACh_info_four{
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 1524px) {
+
+  .ACh_info_two {
+    position: relative;
+    bottom: 0px;
+  }
+  .ACh_info_four {
+    position: relative;
+    bottom: 0px;
+  }
+  .main_card{
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+  }
+  .ACh_main_title {
+    font-size: 18px;
+  }
+  .ach_info_text {
+    font-size: 16px;
+  }
+  .process_card {
+    font-size: 16px;
+  }
+  .ACH-w-50 {
+    width: 100%!important;
+  }
+  .ach_de_title {
+    font-size: 1.3em;
+  }
+  .ach_sub_cont {
+    font-size: 1em;
+  }
+  .ACH_sub_box {
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  .input_lbl {
+    font-size: 1em;
+  }
+  .input_lbl_val {
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (max-width: 1424px) {
+
+  .left_panel_Convert {
+    top: 12vh;
+    padding: 0px 3vh;
+  }
+  .sub_title {
+    font-size: 1.8em;
+  }
+  .main_title {
+    font-size: 2.2em;
+  }
+  .loan_info_text {
+    font-size: 1em;
+  }
+  .conv_main_box p {
+    font-size: 1em;
+  }
+  .current_plan_val {
+    font-size: 1.4em;
+  }
+  .Conversion_details_box .col-lg-3 {
+    padding-left: 1em;
+  }
+  .refresh_box {
+    right: 28vh;
+  }
+  .contact_head_val {
+    font-size: 1.1em;
+  }
+  .acc_number {
+    padding: 5px 8px;
+    font-size: 0.9em;
+  }
+  .save_info_details {
+    font-size: 1.2em;
+  }
+  .summery_lbl {
+    font-size: 1.2em;
+  }
+  .summery_val {
+    font-size: 1.4em;
+  }
+  .Condition_title {
+    font-size: 1.2em;
+  }
+  .term_first_text {
+    font-size: 1em;
+  }
+  .ACh_info_two{
+    position: relative;
+    bottom: 0px;
+  }
+  .ACh_info_four{
+    position: relative;
+    bottom: 0px;
+  }
+  .ach_img_main{
+    position: relative;
+    top: 50px;
+  }
+  .main_card{
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+  }
+  .ACh_main_title {
+    font-size: 2.2em;
+  }
+  .ach_info_text {
+    font-size: 1em;
+  }
+  .process_card {
+    font-size: 16px;
+  }
+  .ACH-w-50 {
+    width: 100%!important;
+  }
+  .mt-5, .my-5 {
+    margin-top: 2rem!important;
+  }
+  .ach_de_title {
+    font-size: 1.3em;
+  }
+  .ach_sub_cont {
+    font-size: 0.9em;
+  }
+  .ACH_sub_box {
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  .input_lbl {
+    font-size: 1em;
+  }
+  .input_lbl_val {
+    font-size: 1.2em;
+  }
+  .bankName {
+    font-size: 0.9em;
+  }
+  .bankAccount {
+    font-size: 0.9em;
+  }
+  .contact_head_lbl {
+    font-size: 0.9em;
+  }
+  .btn_form{
+    font-size: 1em;
+  }
+  .mt-5, .my-5 {
+    margin-top: 1.5rem!important;
+  }
+  .note_ach {
+    font-size: 0.9em;
+  }
+  .ach_note_red {
+    font-size: 0.9em;
+    margin-top: 12px;
+    padding-top: 8px;
+  }
+
+}
+
+@media only screen and (max-width: 1324px) {
+  .note_div{
+    width: 80%;
+  }
+  .ACh_info_two{
+    position: relative;
+    bottom: 0px;
+  }
+  .ACh_info_four{
+    position: relative;
+    bottom: 0px;
+  }
+  .ach_img_main{
+    position: relative;
+    top: 50px;
+  }
+  .main_card{
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+  }
+  .ACh_main_title {
+    font-size: 2.5em;
+  }
+  .process_card {
+    font-size: 16px;
+  }
+  .ACH-w-50 {
+    width: 100%!important;
+  }
+  .mt-5, .my-5 {
+    margin-top: 2rem!important;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .note_div{
+    width: 80%;
+  }
+  .ACh_info_two{
+    position: relative;
+    bottom: 0px;
+  }
+  .ACh_info_four{
+    position: relative;
+    bottom: 0px;
+  }
+  .ach_img_main{
+    position: relative;
+    top: 50px;
+  }
+  .main_card{
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+  }
+  .ACH-w-50 {
+    width: 100%!important;
+  }
+  .mt-5, .my-5 {
+    margin-top: 2rem!important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ACh_info_two{
+    position: relative;
+    bottom: 0px;
+  }
+  .ACh_info_four{
+    position: relative;
+    bottom: 0px;
+  }
+  .ACH-w-50 {
+    width: 100%!important;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .round_icon {
+    display: none !important;
+  }
+  .left_panel_Convert {
+    top: 7vh;
+    padding: 0px 1vh;
+  }
+  .otp_input {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .main_card_inner {
+    margin-top: 60px;
+  }
+  .contact_head div {
+    flex: none;
+  }
+  .contact_head div:nth-child(2) {
+    flex: none;
+  }
+  .contact_head {
+    display: block;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .conv_main_box {
+    padding: 20px;
+  }
+  .Conversion_details_box {
+    margin:0px;
+  }
+  .Conversion_details_box .col-lg-3 {
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+  .refresh_box {
+    position: absolute;
+    margin-top: -24px;
+    background-color: white;
+    padding: 4px;
+    right: 19vh;
+  }
+  .save_info_details {
+    margin-top: 25px;
+  }
+  .payment_success p {
+    padding: 0px !important;
+  }
+  .payment_error p {
+    padding: 0px !important;
+  }
+  .payment_tran {
+    width: auto !important;
+  }
+  .payment_lbl {
+    font-size: 1em;
+  }
+  .note_div {
+    width: 95%;
+  }
+  .img_main {
+    width: 90%;
+    position: relative;
+    top: 22%;
+    left: 19px;
+  }
+  .main_card{
+    margin-top: 60px;
+  }
+  .ACH_tran {
+    width: 100%;
+  }
+  .custom-radio {
+    position: absolute;
+    right: 5px;
+    bottom: 31px;
+  }
+  .ACH_sub_box {
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+  .mt-5, .my-5 {
+    margin-top: 1rem!important;
+  }
+  .pl50{
+    padding-left:0px;
+  }
+  .ACh_main_title {
+    font-size: 1.6em;
+  }
+  .mr-5, .mx-5 {
+    margin-right: 0rem!important;
+  }
+  .ach_info_text {
+    margin-bottom: 25px;
+  }
+  .w60{
+    width: 50%;
+  }
+  .mob_text_center{
+    text-align: center;
+  }
+  .mob_hide{
+    display: none;
+  }
+  .display-table {
+    display: inline-block;
+  }
+  .border-right {
+    border-right: none !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .process_card {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+  }
+  .float-left{
+    float: none !important;
+  }
+  .w-75 {
+    width: 100%!important;
+  }
+  .payment_val {
+    font-size: 1.2em;
+  }
+  .ACH-payment_lbl {
+    font-size: 1em;
+  }
+}
+
